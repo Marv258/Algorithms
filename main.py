@@ -6,9 +6,12 @@ def Boyer_Moore(_text: str, _pattern: str, only_first: bool = True) -> list[str]
     length_text: int = len(_text)
     length_pattern: int = len(_pattern)
     cursor = 0
-    while cursor < length_text
+    while cursor < length_text:
+        cursor = length_pattern - 1  # start with matching last char of pattern in string
+        if _text[cursor] == pattern[-1]:
+            print("last char matches")
 
-    pass
+        pass
 
 
 def string2list(_string: str) -> list[str]:
